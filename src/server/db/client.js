@@ -1,6 +1,6 @@
 const { Client } = require("pg");
 const connectionString =
-  process.env.DATABASE_URL || "postgresql://localhost:5432/record-store";
+  process.env.DATABASE_URL || "postgres://localhost/record-store";
 
 const db = new Client({
   connectionString,
